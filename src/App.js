@@ -77,11 +77,6 @@ function App() {
            ))}
          </ul>
          <ul>
-           {Object.entries(formData5).map(([name, value]) => (
-             <li key={name}><strong>Fecha de nacimiento</strong>: {value.toString()}</li>
-           ))}
-         </ul>
-         <ul>
            {Object.entries(formData3).map(([name, value]) => (
              <li key={name}><strong>Direccion</strong>: {value.toString()}</li>
            ))}
@@ -96,23 +91,23 @@ function App() {
       <form onSubmit={handleSubmit}>
         <fieldset>
           <label>
-            <p>Nombres</p>
+            <p>Nombres de la persona</p>
             <input name="name" onChange={handleChange}/>
           </label>
           <label>
-            <p>Apellidos</p>
+            <p>Apellido de la persona</p>
             <input name="ape" onChange={handleChange2}/>
           </label>
           <label>
-            <p>Fecha de nacimiento</p>
+            <p>Fecha de nacimiento de la persona</p>
             <input type="date" name="fecha" onChange={handleChange5} />
           </label>
           <label>
-            <p>Direccion</p>
+            <p>Direccion de la persona</p>
             <input name="direc" onChange={handleChange3}/>
           </label>
           <label>
-            <p>Telefono</p>
+            <p>Telefono de la persona</p>
             <input name="telf" onChange={handleChange4}/>
           </label>
         </fieldset>
